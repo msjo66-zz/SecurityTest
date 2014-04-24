@@ -241,4 +241,17 @@
       <Item Value="oracle.sample.securityTest.model.Employees.ManagerId"/>
     </AttrArray>
   </Key>
+  <Permission
+    target="oracle.sample.securityTest.model.Employees"
+    permissionClass="oracle.adf.share.security.authorization.EntityPermission">
+    <privilege-map
+      operation="read"
+      privilege="read"/>
+    <privilege-map
+      operation="update"
+      privilege="update"/>
+    <privilege-map
+      operation="removeCurrentRow"
+      privilege="delete"/>
+  </Permission>
 </Entity>

@@ -91,6 +91,10 @@
          <string v="SecurityTest_Project1_SecurityTest"/>
       </list>
    </hash>
+   <hash n="oracle.jdeveloper.deploy.SecurityDeploymentSettings">
+      <value n="Security-Deployment-Migrate-Users-And-Groups-Key" v="false"/>
+      <value n="Security-Deployment-Overwrite-Credentials-Key" v="false"/>
+   </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="ApplicationSrcContentSet">
          <list n="pattern-filters">

@@ -6,7 +6,7 @@
     <f:facet name="toolbar">
       <af:toolbar id="t2">
         <af:button actionListener="#{bindings.CreateInsert.execute}" text="CreateInsert"
-                   disabled="#{!bindings.CreateInsert.enabled}" id="b1"/>
+                   disabled="#{securityContext.userInRole['InsertRole']}" id="b1"/>
       </af:toolbar>
     </f:facet>
     <f:facet name="statusbar"/>

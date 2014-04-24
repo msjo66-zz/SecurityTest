@@ -13,7 +13,8 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   FetchMode="FETCH_AS_NEEDED"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  IsLibraryPrivate="true">
   <EntityUsage
     Name="Employees"
     Entity="oracle.sample.securityTest.model.Employees"/>

@@ -8,6 +8,13 @@
     <view id="browseEmp">
       <page>/browseEmp.jsff</page>
     </view>
+    <view id="view1"></view>
+    <control-flow-rule id="__1">
+      <from-activity-id>browseEmp</from-activity-id>
+      <control-flow-case id="__2">
+        <to-activity-id>view1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
     <use-page-fragments/>
   </task-flow-definition>
 </adfc-config>

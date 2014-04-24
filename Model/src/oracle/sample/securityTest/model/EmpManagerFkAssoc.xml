@@ -5,7 +5,8 @@
   xmlns="http://xmlns.oracle.com/bc4j"
   Name="EmpManagerFkAssoc"
   Version="12.1.3.0.46"
-  InheritPersonalization="merge">
+  InheritPersonalization="merge"
+  IsLibraryPrivate="true">
   <DesignTime>
     <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>

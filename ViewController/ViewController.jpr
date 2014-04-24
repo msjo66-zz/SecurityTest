@@ -58,6 +58,9 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
    <value n="defaultPackage" v="oracle.sample.securityTest.view"/>
+   <hash n="oracle.adfdtinternal.model.ide.security.SecurityPolicies">
+      <value n="grantOption" v="none"/>
+   </hash>
    <hash n="oracle.adfdtinternal.view.rich.setting.ADFViewSettings">
       <value n="ENABLE_ADF_WEBAPP_LIB_SUPPORT" v="true"/>
    </hash>
@@ -90,6 +93,56 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
+         <hash n="DummyTaskFlow">
+            <value n="adflib-connectionDetails" v="true"/>
+            <value n="adflib-nonReusablesError" v="false"/>
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="5"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="WEB-INF/classes/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**"/>
+                              <value n="type" v="0"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="deploy/DummyTaskFlow.jar"/>
+            <hash n="LibraryDependencies">
+               <list n="dependencyList">
+                  <hash>
+                     <hash n="dependable">
+                        <url n="sourceOwnerURL" path="../SecurityTest.jws"/>
+                        <url n="sourceURL" path="../Model/Model.jpr"/>
+                     </hash>
+                     <value n="recognizerId" v="oracle.jdeveloper.library"/>
+                  </hash>
+               </list>
+            </hash>
+            <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
+            <value n="profileName" v="DummyTaskFlow"/>
+         </hash>
          <hash n="SecurityTest_ViewController_webapp">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
@@ -167,6 +220,7 @@
       </hash>
       <list n="profileList">
          <string v="SecurityTest_ViewController_webapp"/>
+         <string v="DummyTaskFlow"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
@@ -291,6 +345,14 @@
             <value n="id" v="BC4J Oracle Domains"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JPS Designtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -407,6 +469,14 @@
          </hash>
          <hash>
             <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JPS Designtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

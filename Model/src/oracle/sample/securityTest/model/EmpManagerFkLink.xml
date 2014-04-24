@@ -6,7 +6,8 @@
   Name="EmpManagerFkLink"
   Version="12.1.3.0.46"
   InheritPersonalization="merge"
-  EntityAssociation="oracle.sample.securityTest.model.EmpManagerFkAssoc">
+  EntityAssociation="oracle.sample.securityTest.model.EmpManagerFkAssoc"
+  IsLibraryPrivate="true">
   <ViewLinkDefEnd
     Name="ManagerIdEmployeesView"
     Cardinality="1"
