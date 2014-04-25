@@ -21,4 +21,22 @@
     <CredentialStoreContext credentialStoreClass="oracle.adf.share.security.providers.jps.CSFCredentialStore"
                             credentialStoreLocation="../../src/META-INF/jps-config.xml"/>
   </sec:adf-security-child>
+  <adf-faces-config xmlns="http://xmlns.oracle.com/adf/faces/config">
+    <persistent-change-manager>
+      <persistent-change-manager-class>
+        oracle.adf.view.rich.change.MDSDocumentChangeManager
+      </persistent-change-manager-class>
+    </persistent-change-manager>
+    <taglib-config>
+      <taglib uri="http://xmlns.oracle.com/adf/faces/rich">
+        <tag name="table">
+          <attribute name="filterVisible">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+      </taglib>
+    </taglib-config>
+  </adf-faces-config>
 </adf-config>

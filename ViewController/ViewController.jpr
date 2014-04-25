@@ -63,6 +63,7 @@
    </hash>
    <hash n="oracle.adfdtinternal.view.rich.setting.ADFViewSettings">
       <value n="ENABLE_ADF_WEBAPP_LIB_SUPPORT" v="true"/>
+      <value n="KEY_ENABLE_USER_CUSTOMIZATIONS" v="2"/>
    </hash>
    <hash n="oracle.ide.model.DependencyConfiguration">
       <list n="dependencyList">
@@ -353,6 +354,10 @@
             <value n="id" v="JPS Designtime"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="ADF Faces Change Manager Runtime 11"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -477,6 +482,10 @@
          </hash>
          <hash>
             <value n="id" v="JPS Designtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Faces Change Manager Runtime 11"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

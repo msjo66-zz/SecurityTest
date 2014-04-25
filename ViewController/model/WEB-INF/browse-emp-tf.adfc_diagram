@@ -30,9 +30,9 @@
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">186.86719</property>
+         name="y">261.73438</property>
       <property
-         name="x">438.0</property>
+         name="x">415.0</property>
       <property
          name="pageFragment">true</property>
    </View>
@@ -44,6 +44,6 @@
       <property
          name="fromOutcome">*</property>
       <property
-         name="sdm:polyPoints">R50,168.0,203.66797,397.0,186.80078,L50</property>
+         name="sdm:polyPoints">R50,168.0,203.66797,374.0,261.66797,L50</property>
    </ControlFlowCase>
 </SDM>

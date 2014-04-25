@@ -66,6 +66,7 @@
          <string v="ADFbc"/>
          <string v="Java"/>
          <string v="XML"/>
+         <string v="XML_SCHEMA"/>
       </list>
    </hash>
    <value n="oracle.jbo.SavedPreferences" v="true"/>
