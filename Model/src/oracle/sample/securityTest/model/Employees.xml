@@ -9,7 +9,9 @@
   DBObjectType="table"
   DBObjectName="EMPLOYEES"
   AliasName="Employees"
-  BindingStyle="OracleName">
+  BindingStyle="OracleName"
+  EventNamespace="http://oracle/sample/securityTest/model/events/edl/Employees"
+  PayloadNamespace="http://oracle/sample/securityTest/model/events/schema/Employees">
   <Attribute
     Name="EmployeeId"
     IsNotNull="true"
@@ -254,4 +256,20 @@
       operation="removeCurrentRow"
       privilege="delete"/>
   </Permission>
+  <EventPub
+    Name="SalaryUpdateEvent_Update"
+    DefName="SalaryUpdateEvent"
+    Disabled="false"
+    EventPoint="Update"/>
+  <EventDef
+    Name="SalaryUpdateEvent">
+    <Payload>
+      <PayloadItem
+        AttrName="Salary"
+        SendOnlyIfChanged="true"/>
+      <PayloadItem
+        AttrName="CommissionPct"
+        SendOnlyIfChanged="true"/>
+    </Payload>
+  </EventDef>
 </Entity>

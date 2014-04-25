@@ -14,7 +14,9 @@
   SelectAllAttributes="false"
   FetchMode="FETCH_AS_NEEDED"
   PageIterMode="Full"
-  IsLibraryPrivate="true">
+  IsLibraryPrivate="true"
+  FetchSize="10"
+  MaxFetchSize="10">
   <EntityUsage
     Name="Employees"
     Entity="oracle.sample.securityTest.model.Employees"/>

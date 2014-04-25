@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<definitions targetNamespace="http://oracle/sample/securityTest/model/events/edl/Employees" xmlns:ns0="http://oracle/sample/securityTest/model/events/schema/Employees" xmlns="http://schemas.oracle.com/events/edl">
+   <schema-import namespace="http://oracle/sample/securityTest/model/events/schema/Employees" location="Employees.xsd"/>
+   <event-definition name="SalaryUpdateEvent">
+      <content element="ns0:SalaryUpdateEventInfo"/>
+   </event-definition>
+</definitions>

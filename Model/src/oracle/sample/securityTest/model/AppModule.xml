@@ -13,6 +13,9 @@
   <ViewUsage
     Name="EmployeesView2"
     ViewObjectName="oracle.sample.securityTest.model.EmployeesView"/>
+  <ViewUsage
+    Name="EmployeesView3"
+    ViewObjectName="oracle.sample.securityTest.model.EmployeesView"/>
   <ViewLinkUsage
     Name="EmpManagerFkLink1"
     ViewLinkObjectName="oracle.sample.securityTest.model.EmpManagerFkLink"
